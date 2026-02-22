@@ -1,16 +1,96 @@
-/* MKWorld 即時集計表 再構築版 */
-
-body {
-  margin: 0;
-  font-family: "BIZ UDPGothic", sans-serif;
-  background: #68b7ff;
+:root{
+  --bg:#68b7ff;
+  --card:#fff;
+  --card2:#f6f7f9;
+  --text:#111;
+  --err:#d10000;
+  --cpu:#4C4C4C;
+  --radius:12px;
+  --shadow:0 8px 24px rgba(0,0,0,.08);
+  --fontHead:"BIZ UDPGothic","BIZ UDPゴシック",system-ui,sans-serif;
+  --fontThin:system-ui,sans-serif;
+  --tagw:56px;
+  --tagh:22px;
 }
 
-#app {
-  width: 900px;
-  margin: 20px auto 40px;
+body{
+  margin:0;
+  font-family:var(--fontThin);
+  background:var(--bg);
 }
 
-h1 {
-  text-align: center;
+#app{
+  width:900px;
+  margin:20px auto 40px;
+}
+
+.titleRow{
+  background:#f04b36;
+  color:#fff;
+  border-radius:20px;
+  padding:18px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.title{
+  font-family:var(--fontHead);
+  font-size:40px;
+  margin:0;
+}
+
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:14px 16px;
+  margin:14px 0;
+}
+
+.cardLast{
+  margin-bottom:40px;
+}
+
+.cardTitle{
+  background:#111;
+  color:#fff;
+  padding:6px 10px;
+  border-radius:6px;
+  font-family:var(--fontHead);
+  font-weight:800;
+}
+
+.btn{
+  border:1px solid #000;
+  border-radius:8px;
+  padding:6px 12px;
+  background:#fff;
+  cursor:pointer;
+  font-family:var(--fontHead);
+  font-weight:700;
+}
+
+.errInline{
+  color:var(--err);
+  font-size:11px;
+  font-weight:800;
+}
+
+.rankWrap{
+  overflow-x:auto;
+}
+
+.outLine{
+  border:1px solid #bbb;
+  border-radius:8px;
+  padding:6px 8px;
+  background:#fff;
+}
+
+.divider{
+  height:2px;
+  background:#000;
+  opacity:.15;
+  margin:10px 0;
 }
