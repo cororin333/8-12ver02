@@ -1,0 +1,16 @@
+/* MKWorld 即時集計表 再構築版 */
+
+body {
+  margin: 0;
+  font-family: "BIZ UDPGothic", sans-serif;
+  background: #68b7ff;
+}
+
+#app {
+  width: 900px;
+  margin: 20px auto 40px;
+}
+
+h1 {
+  text-align: center;
+}
